@@ -1,4 +1,4 @@
-# Fokker-Planck Equation for Uncertainty Propagation in Orbital Dynamics
+# Uncertainty propagation in orbital dynamics via Galerkin projection of the Fokker-Planck Equation
 
 Repository for the code of the paper: 
 
