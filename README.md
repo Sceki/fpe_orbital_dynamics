@@ -1,6 +1,6 @@
 # Uncertainty propagation in orbital dynamics via Galerkin projection of the Fokker-Planck Equation
 
-Repository for the code of the paper: 
+Repository for backbone code of the paper:
 
 ```
 @article{acciarini2024uncertainty,
