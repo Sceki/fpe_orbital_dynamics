@@ -1,4 +1,4 @@
-# Fokker-Planck Equation for Uncertainty Propagation in Orbital Mechanics
+# Fokker-Planck Equation for Uncertainty Propagation in Orbital Dynamics
 
 Repository for the code of the paper: 
 
