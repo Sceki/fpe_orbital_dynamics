@@ -5,7 +5,7 @@ authors:
   - family-names: Acciarini
     given-names: Giacomo
     email: giacomo.acciarini@gmail.com
-license: MIT
+license: GNU GPL v3
 repository-code: "https://github.com/Sceki/fpe"
 preferred-citation:
   type: article
