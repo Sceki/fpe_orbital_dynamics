@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "fpe: Galerkin projection of the Fokker-Planck equation for orbital dynamics"
+authors:
+  - family-names: Acciarini
+    given-names: Giacomo
+    email: giacomo.acciarini@gmail.com
+license: MIT
+repository-code: "https://github.com/Sceki/fpe"
+preferred-citation:
+  type: article
+  title: "Uncertainty propagation in orbital dynamics via Galerkin projection of the Fokker-Planck Equation"
+  authors:
+    - family-names: Acciarini
+      given-names: Giacomo
+    - family-names: Greco
+      given-names: Cristian
+    - family-names: Vasile
+      given-names: Massimiliano
+  journal: "Advances in Space Research"
+  volume: 73
+  issue: 1
+  start: 53
+  end: 63
+  year: 2024
+  doi: "10.1016/j.asr.2023.11.042"
+
