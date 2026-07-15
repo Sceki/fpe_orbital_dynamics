@@ -199,12 +199,6 @@ Measured on an Apple-silicon laptop (`benchmarks/bench_assembly.py`):
 | propagate full pdf (42 epochs / 26 epochs over 50 y) | 0.43 s | 15 s |
 | evaluate pdf at 200k points | 4.3 ms | — |
 
-On the paper's 3D drag test case (22³ basis), the propagated mean semi-major
-axis matches a 20k-sample Monte Carlo run to **7 m** and its standard
-deviation to **4 m** after 50 years — within the Monte Carlo sampling noise
-— with the pdf integral staying within `5×10⁻⁵` of unity
-(`examples/03_equinoctial_deterministic.py`).
-
 ## Repository layout
 
 ```
