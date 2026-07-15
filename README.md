@@ -1,12 +1,10 @@
 # Uncertainty propagation in orbital dynamics via Galerkin projection of the Fokker-Planck Equation
 
-# fpe — Fokker–Planck Equation solver via Galerkin projection
-
 [![CI](https://github.com/Sceki/fpe/actions/workflows/ci.yml/badge.svg)](https://github.com/Sceki/fpe/actions/workflows/ci.yml)
 [![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Paper](https://img.shields.io/badge/DOI-10.1016%2Fj.asr.2023.11.042-blue)](https://doi.org/10.1016/j.asr.2023.11.042)
 
-Fast uncertainty propagation for (orbital) dynamics by solving the
+Uncertainty propagation for (orbital) dynamics by solving the
 **Fokker–Planck equation** with a **Galerkin projection** onto tensor-product
 B-spline bases — the method of:
 
