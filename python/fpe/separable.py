@@ -16,7 +16,7 @@ small 1D matrices computed by *one-dimensional* quadrature:
 
 and likewise for constant diffusion (plain first/second-derivative
 matrices). M is then never assembled: it is stored as a few small factors
-and applied matrix-free, dimension by dimension -- the same structure the
+and applied matrix-free, dimension by dimension, the same structure the
 solver already exploits for the Gram matrix B. Combined with the Krylov
 expm-action, this removes both walls at once and makes 6-7 dimensions
 practical for polynomial (or polynomial-fitted) dynamics.
@@ -181,9 +181,9 @@ def build_kron_terms(splines, dynamics: "SeparableDynamics", D, interior: bool,
                      q: int, sink_1d=None):
     """Kronecker-term representation of the restricted operator ``B^{-1} M``.
 
-    Shared by the full-tensor solver (:meth:`FokkerPlanckSolver.
-    assemble_separable`) and the tensor-train solver (:mod:`fpe.tt`).
-    Dimensions untouched by a term contribute their 1D Gram matrix to ``M``;
+    Used by the full-tensor solver (:meth:`FokkerPlanckSolver.
+    assemble_separable`). Dimensions untouched by a term contribute their
+    1D Gram matrix to ``M``;
     pre-multiplying every factor by the (restricted) ``G_d^{-1}`` turns
     those into true identities, so untouched dimensions cost nothing.
 

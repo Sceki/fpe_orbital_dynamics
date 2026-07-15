@@ -21,7 +21,7 @@ Quick start
 >>> mean, cov = solver.moments(coeffs[-1])
 """
 
-from . import _core, dynamics, metrics, separable, tt
+from . import _core, dynamics, metrics, separable
 from ._core import halton
 from .basis import TensorBSplineBasis
 from .pdf import GaussianPDF
@@ -36,7 +36,6 @@ __all__ = [
     "dynamics",
     "metrics",
     "separable",
-    "tt",
     "halton",
     "_core",
     "__version__",
