@@ -1,0 +1,52 @@
+[build-system]
+requires = ["scikit-build-core>=0.9", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "fpe"
+version = "0.1.0"
+description = "Galerkin-projection solver of the Fokker-Planck equation for uncertainty propagation in orbital dynamics (C++ core, Python API)"
+readme = "README.md"
+authors = [
+    { name = "Giacomo Acciarini", email = "giacomo.acciarini@gmail.com" },
+]
+license = { text = "GNU General Public License v3.0" }
+requires-python = ">=3.9"
+keywords = [
+    "fokker-planck",
+    "uncertainty-propagation",
+    "orbital-dynamics",
+    "astrodynamics",
+    "galerkin",
+    "b-splines",
+    "space-situational-awareness",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy>=1.21", "scipy>=1.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+examples = ["matplotlib>=3.5"]
+jax = ["jax>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/Sceki/fpe_orbital_dynamics"
+Paper = "https://doi.org/10.1016/j.asr.2023.11.042"
+
+[tool.scikit-build]
+minimum-version = "0.9"
+cmake.version = ">=3.18"
+build-dir = "build/{wheel_tag}"
+wheel.packages = ["python/fpe"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
