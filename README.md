@@ -72,7 +72,7 @@ the *exact stationary solution*, and Hellinger convergence to it:
 (exponential atmosphere → heavy left tail; decay-corridor probability
 directly from the pdf):
 
-| paper test case vs Monte Carlo | debris decay-corridor probability |
+| test case vs Monte Carlo | debris decay-corridor probability |
 |---|---|
 | ![Equinoctial](docs/figures/equinoctial_deterministic.png) | ![Debris](docs/figures/debris_decay_ballistic.png) |
 
@@ -206,7 +206,7 @@ cpp/include/fpe/   header-only C++ core (bspline, assembly, expm, dynamics, ...)
 cpp/src/           pybind11 bindings
 python/fpe/        Python API (solver, basis, dynamics, metrics)
 tests/             pytest suite (validated against closed-form FPE solutions)
-examples/          paper experiments
+examples/          experiments mirroring some of the paper
 docs/theory.md     derivation notes mapping code ↔ paper equations
 ```
 
