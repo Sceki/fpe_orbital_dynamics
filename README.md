@@ -234,7 +234,6 @@ If you use this software, please cite the paper (and see [CITATION.cff](CITATION
 ```
 
 The repo is the efficiency-focused successor of the paper implementation
-[Sceki/fpe_orbital_dynamics](https://github.com/Sceki/fpe_orbital_dynamics).
 
 ## License
 
